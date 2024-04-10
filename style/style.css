@@ -12,5 +12,13 @@ margin-bottom:0px;
 {
 
     background:#CCCCCC;
+    min-height: 400px;
+
+}
+
+.padding
+{
+    padding-top:20px;
+    padding-bottom: 10px;
 
 }
