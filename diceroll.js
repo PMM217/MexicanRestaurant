@@ -24,4 +24,6 @@ function generateVoucher(length) {
   }
   return result;
 }
+
+
 	

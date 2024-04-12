@@ -1,24 +1,30 @@
-.jumbotron
-{
+.jumbotron{
 
-background-image: url('../Img/weather.png');
+background-image: url('../Img/homepageBackground.jpg');
 background-attachment:fixed;
 min-height:500px;
 margin-bottom:0px;
 
 }
 
-.alt1
-{
+.alt1{
 
     background:#CCCCCC;
     min-height: 400px;
 
 }
 
-.padding
-{
+.padding{
     padding-top:20px;
     padding-bottom: 10px;
+
+}
+
+.alt2{
+
+background:#000000;
+min: height 150px;
+color:#fff;
+text-align:center;
 
 }
