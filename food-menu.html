@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="style/style.css" />
 
     <title> Mexican Restaurant </title>
@@ -16,43 +18,48 @@
 
 
 <body>
-    <div class="navbar-static-top navbar-default" id="home"></div>
 
-    <div class="container">
+    <!-- START OF NAV BAR -->
+    <div class="navbar-static-top navbar-default" id="home">
 
-        <div class="navbar-brand">
+        <div class="container">
 
-            <!-- We use "#" so that the page does not reload when we clink a link -->
-            <!-- <a href="#"> --> MEX BAR
+                <div class="navbar-brand">
+
+                    <!-- We use "#" so that the page does not reload when we clink a link -->
+                    <!-- <a href="#"> --> Sean & Paul's Tequila Tango
+
+                </div>
+
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+
+                        Menu
+
+                    </button>
+
+                <div class="collapse navbar-collapse navHeaderCollapse">
+                    <!--Collapses menu - mobile view -->
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="food-menu.html">Food Menu</a></li>
+                        <li><a href="drink-menu.html">Drink Menu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+
+
+                    </ul>
+
+                </div>
 
         </div>
 
-        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-
-            Menu
-
-        </button>
-
-        <div class="collapse navbar-collapse navHeaderCollapse">
-            <!--Collapses menu - mobile view -->
-
-            <ul class="nav navbar-nav navbar-right">
-
-                <li><a href="index.html">Home</a></li>
-                <li><a href="food-menu.html">Food Menu</a></li>
-                <li><a href="drink-menu.html">Drink Menu</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="about.html">About</a></li>
-               
-
-            </ul>
-
-        </div>
     </div>
+    <!-- END OF NAV BAR -->
 
 
-
-    </div>
+    <!-- START OF JUMBO -->
 
     <div class="jumbotron">
         <div class="container">
@@ -61,109 +68,227 @@
             <p><a href="https://github.com/PMM217" target="_blank" class="btn btn-primary btn-lg">GitHub</a></p>
         </div>
     </div>
+    <!-- END OF JUMBO  -->
 
 
-    <div class="alt1">
+    <!-- strat of alt1 -->
+    <div class="alt1 padding">
 
-        <div class="container">
-            <div class="row">
 
-                <div class="col-md-4">
+    <!-- START OF BURRITO  -->
 
-                    <h2 class="text-center">ColumnOne</h2>
-                    <p class="text-justify"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sint cum
-                        assumenda nostrum optio. Dolore sapiente suscipit voluptates repellat voluptatem perspiciatis
-                        iusto? Magni molestiae, accusamus qui praesentium illum soluta assumenda.</p>
-                    <a href="#" class="btn btn-default"> Tell me more..</a>
+    <div class="container">
 
-                </div>
+        <div class="row padding">
 
-                <div class="col-md-4">
+            <div class="col-md-6">
 
-                    <h2 class="text-center">ColumnTwo</h2>
-                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus
-                        iste ducimus, commodi animi maiores ipsum adipisci labore cupiditate, iusto maxime nostrum hic
-                        suscipit omnis. Ratione necessitatibus ipsam ut illo?</p>
-                    <a href="#" class="btn btn-default"> Tell me more..</a>
-
-                </div>
-
-                <div class="col-md-4">
-
-                    <h2 class="text-center">ColumnThree</h2>
-                    <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, pariatur
-                        fugit optio nobis tenetur alias! Earum adipisci iste praesentium provident cupiditate, dolorem
-                        quisquam libero, ab facilis impedit possimus quia error.</p>
-                    <a href="#" class="btn btn-default"> Tell me more..</a>
-
-                </div>
-
-                <div class="container padding" id="contact">
-
-                    <form role="form">
-    
-                        <!-- Class form group seperates everything and presents it in a nice manner -->
-                        <!-- allows someone with screen reader to jump directly to contact form using their keyboard - great for asseccibility purposes -->
-                        <div class="form-group">
-    
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="example@example.com" />
-                                
-    
-                        </div>
-    
-                        <div class="form-group">
-                            <label for="name">Name:</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Your name here" />
-    
-                        </div>
-    
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea class="form-control" name="message" id="message"
-                                placeholder="your message here"></textarea>
-    
-                        </div>
-                        <div class="form-group">
-                            <input type="checkbox" /> Sign me up to recieve Direct Marketing Content?
-                        </div>
-                        <button type="Submit" class="btn btn-default">Submit</button>
-    
-    
-                    </form>
-    
-    
-                </div>
-    
-    
-                <div class="alt2">
-    
-                    <div class="container">
-    
-                        <footer> &copy; Paul and Sean<br /><a href="#home">Back to Top of Page</a></footer>
-    
-                    </div>
-    
-                </div>
-
+                <img src="Img/food1.png" class="img-circle img-responsive" alt="Buritto" />
 
             </div>
-      
 
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <div class="col-md-6  ">
 
+                <h2 class="text-center">Burrito</h2>
 
+                <p class="text-justify">A burrito is a classic Mexican dish consisting of a flour tortilla wrapped
+                    around various fillings, typically including seasoned meat (such as beef, chicken, or pork),
+                    rice, beans, cheese, and salsa. It's often served with guacamole, sour cream, and additional
+                    toppings like lettuce and tomatoes. Burritos are known for their portability and
+                    versatility, making them a popular choice for meals on the go or casual dining</p>
 
+                <p class="card-text"><small class="text-muted">164 calories. Carbs 8g Fat 0g Protein 1g</small>
 
-      <!--  wrap smooth scrolling script inside a document ready function. This ensures that the script runs after the DOM has fully loaded: -->
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- END OF BURRITO -->
+
+    <hr/>
+
+    <!-- START OF QUES -->
+
+    <div class="container">
+
+        <div class="row padding">
+
+            <div class="col-md-6">
+
+                <h2 class="text-center">Quesadilla</h2>
+
+                <p class="text-justify">A quesadilla is a simple yet delicious Mexican dish made by filling a
+                    tortilla with cheese (and often other ingredients) and then folding it in half and grilling
+                    or toasting until the cheese is melted and the tortilla is crispy. Common fillings for
+                    quesadillas include shredded chicken, beef, vegetables, and beans. Quesadillas are often
+                    served with salsa, guacamole, and sour cream for dipping or topping.</p>
+
+                <p class="card-text"><small class="text-muted">275 calories. Carbs 36.1g Fat 0.2g Protein 0.2g</small>
+
+                </p>
+
+            </div>
+
+                <div class="col-md-6">
+
+                        <img src="Img/food2.png" class="img-circle img-responsive" alt="Quesadilla" />
+
+                </div>
+
+            <!-- </div> -->
+
+        </div>
+
+    </div>
+    <!-- END OF QUES -->
     
- <!-- //Smooth scrolling script here    -->
-    <script>
-        $(document).ready(function() {
-});
+    <hr/>
 
-// https://css-tricks.com/snippets/jquery/smooth-scrolling/
+    <!-- START OF TACO -->
+
+    <div class="container">
+
+         <div class="row padding">
+
+            <div class="col-md-6">
+
+                <img src="Img/food3.png" class="img-circle img-responsive" alt="Tacos" />
+
+            </div>
+
+                <h2 class="text-center">Taco</h2>
+
+            <p class="text-justify">
+
+                Tacos are a traditional Mexican dish made with a corn or flour tortilla
+                folded or rolled around a filling. The filling can vary widely and may include grilled or
+                seasoned meat (such as beef, chicken, or fish), beans, cheese, lettuce, tomatoes, salsa, and
+                other toppings. Tacos are typically eaten by hand and are known for their bold flavors and
+                customizable nature, allowing each person to create their perfect combination of
+                ingredients.
+            
+            </p>
+
+            <p class="card-text"><small class="text-muted">57 calories. Carbs 15g Fat 0g Protein 0g</small>
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- END OF TACO -->
+
+    <hr/>
+
+    <!-- START OF NACHO -->
+
+    <div class="container">
+
+        <div class="row padding">
+
+            <div class="col-md-6">
+
+                <img src="Img/food4.png" class="img-circle img-responsive" alt="Nachos" />
+
+            </div>
+
+                <h2 class="text-center">Nachos</h2>
+
+                <p class="text-justify">
+                    
+                    Nachos are a popular Mexican-inspired snack or appetizer consisting of
+                    tortilla chips topped with melted cheese and a variety of other ingredients. Common toppings
+                    include seasoned ground beef or shredded chicken, beans, diced tomatoes, sliced jalapeños,
+                    sour cream, guacamole, and salsa. Nachos are often served as a shareable dish at parties,
+                    sports events, or casual gatherings, and they can be customized to suit individual tastes.
+                </p>
+
+                <p class="card-text"><small class="text-muted">143 calories. Carbs 13.7g Fat 0g Protein 1.1g</small></p>
+
+        </div>
+
+    </div>
+
+    <!-- END OF NACHO -->
+
+
+   
+
+</div>
+ <!-- alt1 END -->
+
+
+    <div class="container padding" id="contact">
+
+        <form role="form" onsubmit="return validateForm();">
+
+            <!-- Class form group seperates everything and presents it in a nice manner -->
+            <!-- allows someone with screen reader to jump directly to contact form using their keyboard - great for asseccibility purposes -->
+
+            <div class="form-group">
+
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email"
+                    placeholder="example@example.com" />
+                <span id="emailError" class="text-danger"></span>
+
+            </div>
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your name here" />
+                <span id="nameError" class="text-danger"></span>
+
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" name="message" id="message"
+                    placeholder="your message here"></textarea>
+                <span id="messageError" class="text-danger"></span>
+
+            </div>
+            <div class="form-group">
+                <input type="checkbox" /> Sign me up to recieve Direct Marketing Content?
+            </div>
+            <button type="Submit" class="btn btn-default">Submit</button>
+
+
+        </form>
+
+
+    </div>
+
+
+    <div class="alt2">
+
+        <div class="container">
+
+            <footer> &copy; Sean & Paul's Tequila Tango<br /><a href="#home">Back to Top of Page</a></footer>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- <script src=>"https://code.jquery.com/jquery-1.12.4.min.js"</script>    Smooth Scrolling did not work with this version -->
+
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+
+    <!--  wrap smooth scrolling script inside a document ready function. This ensures that the script runs after the DOM has fully loaded: -->
+
+    <!-- //Smooth scrolling script here    -->
+    <script>
+        $(document).ready(function () {});
+
+        // https://css-tricks.com/snippets/jquery/smooth-scrolling/
 
         // Select all links with hashes
         $('a[href*="#"]')
@@ -194,16 +319,54 @@
                                 return false;
                             } else {
                                 $target.attr('tabindex',
-                                '-1'); // Adding tabindex for elements not focusable
+                                    '-1'); // Adding tabindex for elements not focusable
                                 $target.focus(); // Set focus again
                             };
                         });
                     }
                 }
             });
+
+
+
+        function validateForm() {
+
+            var email = document.getElementById('email').value;
+            var name = document.getElementById('name').value;
+            var message = document.getElementById('message').value;
+
+            //reset the error messages for next submit
+            document.getElementById('emailError').innerHTML = "";
+            document.getElementById('nameError').innerHTML = "";
+            document.getElementById('messageError').innerHTML = "";
+
+
+
+            if (email === "") {
+
+                document.getElementById('emailError').innerHTML = "Email box cannot be left Blank";
+                return false;
+            }
+
+            if (name === "") {
+
+                document.getElementById('nameError').innerHTML = "Name box cannot be left Blank";
+                return false;
+            }
+
+            if (message === "") {
+
+                document.getElementById('messageError').innerHTML = "Message box cannot be left Blank";
+                return false;
+            }
+
+            alert(
+                "Form submitted Successfully! A member of our Amazing team will contact you within 24 hours in relation to you request")
+
+            return true;
+        }
     </script>
 </body>
-
 
 
 

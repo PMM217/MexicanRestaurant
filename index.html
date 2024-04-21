@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="style/style.css" />
 
     <title> Mexican Restaurant </title>
@@ -22,7 +24,7 @@
             <div class="navbar-brand">
 
                 <!-- We use "#" so that the page does not reload when we clink a link -->
-                <!-- <a href="#"> --> MEX BAR
+                <!-- <a href="#"> --> Sean & Paul's Tequila Tango
 
             </div>
 
@@ -101,17 +103,25 @@
             </div> -->
 
         <div class="container">
+
             <div class="row padding">
+
                 <div class="col-md-6">
+
                     <img src="Img/1.png" class="img-circle img-responsive" alt="describe image" />
+
                     <!-- alt should be always added for SEO + Assessibilty -->
                 </div>
 
                 <div class="col-md-6">
-                    <h2 class="text-center">Work 1</h2>
-                    <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi fuga
-                        eum sunt autem molestiae ad nemo dolore recusandae expedita voluptas facere accusamus, eos
-                        illo. Laudantium tempora molestias ad animi placeat. </p>
+                    <h2 class="text-center">Looking to Join the Team?</h2>
+                    <p class="text-justify">Are you passionate about delivering exceptional dining experiences? Join
+                        our dynamic team at Sean & Pauls Tango Twist! We're always on the lookout for enthusiastic
+                        individuals who share
+                        our dedication to quality service and authentic cuisine. Whether you're a seasoned professional
+                        or just starting your culinary journey, we offer exciting opportunities for growth and
+                        development. Come be a part of our vibrant team and embark on a rewarding career in the
+                        hospitality industry. For a confidential discussion please fill out our contact form below! </p>
 
                 </div>
             </div>
@@ -120,11 +130,19 @@
 
             <div class="row padding">
                 <div class="col-md-6">
-                    <h2 class="text-center">WORK 2</h2>
+                    <h2 class="text-center"> Perfect for Large groups / Corporate Events</h2>
 
-                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quisquam
-                        accusamus error facilis, veniam veritatis, quaerat ea harum itaque dolorum modi? Quo
-                        assumenda magni error quisquam dolore tenetur architecto quasi.</p>
+                    <p class="text-justify">At Sean & Paul's Tango Twist, we pride ourselves on curating unforgettable
+                        dining experiences
+                        for large groups and corporate events. Whether you're planning a company outing, or a special
+                        celebration with friends and family, our expert team is dedicated to making
+                        your occasion truly memorable. From customizing menus to accommodating special requests, we go
+                        above and beyond to ensure every detail is tailored to your needs. Our spacious venue,
+                        delectable cuisine, and attentive service create the perfect atmosphere for gatherings of any
+                        size. Contact us today on our contact form below to learn more about our exclusive group deals
+                        and corporate event
+                        packages, and let us help you create an extraordinary event that exceeds expectations everytime!
+                    </p>
 
                 </div>
 
@@ -147,10 +165,11 @@
                 </div>
 
                 <div class="col-md-6">
-                    <h2 class="text-center">WORK 3</h2>
-                    <p class="text-justify"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est voluptas
-                        numquam quos et quas in deleniti, enim vel aperiam eos officia omnis nam a expedita ipsa
-                        totam. Consectetur, nemo sint?</p>
+                    <h2 class="text-center">The Perfect Gift!</h2>
+                    <p class="text-justify">Discover the perfect gift for any occasion at MEX BAR. Our restaurant
+                        offers convenient vouchers available for purchase in-store. Treat your loved ones to a
+                        delightful dining experience with our versatile vouchers, the ideal way to share the joy of
+                        great food and ambiance</p>
 
 
 
@@ -166,22 +185,24 @@
 
         <div class="container padding" id="contact">
 
-            <form role="form">
+            <form role="form" onsubmit="return validateForm();">
 
                 <!-- Class form group seperates everything and presents it in a nice manner -->
                 <!-- allows someone with screen reader to jump directly to contact form using their keyboard - great for asseccibility purposes -->
+
                 <div class="form-group">
 
                     <label for="email">Email:</label>
                     <input type="email" class="form-control" id="email" name="email"
                         placeholder="example@example.com" />
-
+                    <span id="emailError" class="text-danger"></span>
 
                 </div>
 
                 <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Your name here" />
+                    <span id="nameError" class="text-danger"></span>
 
                 </div>
 
@@ -189,6 +210,7 @@
                     <label for="message">Message</label>
                     <textarea class="form-control" name="message" id="message"
                         placeholder="your message here"></textarea>
+                    <span id="messageError" class="text-danger"></span>
 
                 </div>
                 <div class="form-group">
@@ -207,7 +229,7 @@
 
             <div class="container">
 
-                <footer> &copy; Paul and Sean<br /><a href="#home">Back to Top of Page</a></footer>
+                <footer> &copy; Sean & Paul's Tequila Tango<br /><a href="#home">Back to Top of Page</a></footer>
 
             </div>
 
@@ -264,6 +286,46 @@
                         }
                     }
                 });
+
+
+
+            function validateForm() {
+
+                var email = document.getElementById('email').value;
+                var name = document.getElementById('name').value;
+                var message = document.getElementById('message').value;
+
+                //reset the error messages for next submit
+                document.getElementById('emailError').innerHTML = "";
+                document.getElementById('nameError').innerHTML = "";
+                document.getElementById('messageError').innerHTML = "";
+
+
+
+                if (email === "") {
+
+                    document.getElementById('emailError').innerHTML = "Email box cannot be left Blank";
+                    return false;
+                }
+
+                if (name === "") {
+
+                    document.getElementById('nameError').innerHTML = "Name box cannot be left Blank";
+                    return false;
+                }
+
+                if (message === "") {
+
+                    document.getElementById('messageError').innerHTML = "Message box cannot be left Blank";
+                    return false;
+                }
+
+                alert(
+                    "Form submitted Successfully! A member of our Amazing team will contact you within 24 hours in relation to you request"
+                )
+
+                return true;
+            }
         </script>
 </body>
 

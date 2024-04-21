@@ -7,6 +7,11 @@ margin-bottom:0px;
 
 }
 
+/* .img-size{
+    height: 75%;
+    width: 75%;
+} */
+
 .alt1{
 
     background:#CCCCCC;
@@ -23,7 +28,7 @@ margin-bottom:0px;
 .alt2{
 
 background:#000000;
-min: height 150px;
+min-height:150px;
 color:#fff;
 text-align:center;
 
