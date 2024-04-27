@@ -49,6 +49,7 @@ text-align:center;
 
 .carousel {
     background-color: #e9cf95;
+}
 
 .carousel-caption p{
   font-family: "Fugaz One", sans-serif;
@@ -86,4 +87,23 @@ text-align:center;
 	}
 	label {
     cursor: pointer;
+}
+
+/* CSS code for positioning text over images */
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-text {
+  display: none; /* Initially hide text */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Text color */
+  background-color: rgba(0, 0, 0, 0.7); /* Background color with transparency */
+  padding: 20px;
+  width: 80%; /* Adjust the width as needed */
 }
