@@ -210,6 +210,12 @@
                     <span id="nameError" class="text-danger"></span>
 
                 </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" />
+                    <span id="phoneError" class="text-danger"></span>
+                </div>
 
                 <div class="form-group">
                     <label for="message">Message</label>
@@ -293,50 +299,13 @@
                         }
                     }
                 });
+            
+              </script>
 
 
-
-            function validateForm() {
-
-                var email = document.getElementById('email').value;
-                var name = document.getElementById('name').value;
-                var message = document.getElementById('message').value;
-
-                //reset the error messages for next submit
-                document.getElementById('emailError').innerHTML = "";
-                document.getElementById('nameError').innerHTML = "";
-                document.getElementById('messageError').innerHTML = "";
-
-
-
-                if (email === "") {
-
-                    document.getElementById('emailError').innerHTML = "Email box cannot be left Blank";
-                    return false;
-                }
-
-                if (name === "") {
-
-                    document.getElementById('nameError').innerHTML = "Name box cannot be left Blank";
-                    return false;
-                }
-
-                if (message === "") {
-
-                    document.getElementById('messageError').innerHTML = "Message box cannot be left Blank";
-                    return false;
-                }
-
-                alert(
-                    "Form submitted Successfully! A member of our Amazing team will contact you within 24 hours in relation to you request"
-                )
-
-                return true;
-            }
-        </script>
 </body>
 
-
+<script src="js/validateForm.js"></script> 
 
 
 </html>
