@@ -7,6 +7,11 @@ margin-bottom:0px;
 
 }
 
+/* .img-size{
+    height: 75%;
+    width: 75%;
+} */
+
 .alt1{
 
     background:#CCCCCC;
@@ -23,7 +28,7 @@ margin-bottom:0px;
 .alt2{
 
 background:#000000;
-min-height: 150px;
+min-height:150px;
 color:#fff;
 text-align:center;
 
@@ -42,3 +47,41 @@ text-align:center;
   font-size: 32px;
 }
 
+.carousel {
+    background-color: #01a9b3;
+
+.carousel-caption p{
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.6); 
+  padding: 10px;
+}
+
+.carousel-caption h3{
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.6); 
+  padding: 10px;
+}
+
+/*.jumbotron h1{
+  font-family: "Londrina Outline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}*/
+
+.image-text {
+	display: none;
+    }
+        
+	#toggle-text:checked + .image-text {
+    display: block;
+	}
+	label {
+    cursor: pointer;
+}
