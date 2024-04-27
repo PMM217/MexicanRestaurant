@@ -16,20 +16,22 @@
 
 
 <body>
- <div class="navbar-static-top navbar-default" id="home">
+    <div class="navbar-static-top navbar-inverse" id="home">
 
         <div class="container">
 
             <div class="navbar-brand">
 
                 <!-- We use "#" so that the page does not reload when we clink a link -->
-                <!-- <a href="#"> --> Paul & Sean's Tequila Tango
+                <!-- <a href="index.html" --> Tequila Tango
 
             </div>
 
             <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-
-                Menu
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
 
             </button>
 
@@ -42,9 +44,8 @@
                     <li><a href="food-menu.html">Food Menu</a></li>
                     <li><a href="drink-menu.html">Drink Menu</a></li>
                     <li><a href="#contact">Contact</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="about.html">About</a></li>
-
 
 
                 </ul>
@@ -53,9 +54,8 @@
         </div>
 
 
-
     </div>
-	
+
     <div class="jumbotron">
         <div class="container">
             <h1>Our Drinks</h1>
@@ -67,8 +67,10 @@
             <!--<p><a href="https://github.com/PMM217" target="_blank" class="btn btn-primary btn-lg">GitHub</a></p>-->
         </div>
     </div>
-	
-	 <!-- START OF MICHELADA  -->
+
+	    <div class="alt1 padding">
+
+	<!-- START OF MICHELADA  -->
 
     <div class="container">
 
@@ -76,28 +78,25 @@
 
             <div class="col-md-6">
 
-                <input type="checkbox" id="toggle-text">
-    
-				<label for="toggle-text">
-				
-				<img src="Img/drink1.png" class="img-circle img-responsive" alt="Michelada" />
-				
-				</label>
-       
-				<p id="image-link" class="image-text">164 calories. Carbs 8g Fat 0g Protein 1g</p>
-    
+			<div class="image-container">
+
+            <img src="Img/drink1.png" class="img-circle img-responsive" alt="Michelada" onclick="showText(1)" />
+
+			<div class="image-text" id="text1">164 calories. Carbs 8g Fat 0g Protein 1g</div>
+
+			<script src="js/showText.js"></script>
 
             </div>
-			
+
+		</div>
 
             <div class="col-md-6  ">
 
                 <h2 class="text-center">Michelada</h2>
 
                 <p class="text-justify">A popular Mexican drink consisting of beer, lime juice, tomato juice, chili powder
-                    and salt. A unique drink that is hard to imagine until you've had the pleasure of tasting one!</p>
-
-                <p class="card-text"><small class="text-muted">164 calories. Carbs 8g Fat 0g Protein 1g</small>
+                    and salt. A unique drink that is hard to imagine until you've had the pleasure of tasting one!
+					For fans of beer, there is nothing more uniquely Mexican and we love to showcase what makes ours not just authentic, but delicious!</p>
 
                 </p>
 
@@ -107,7 +106,7 @@
 
     </div>
 	<!-- END OF MICHELADA -->
-	
+
 	<!-- START OF MARGARITA  -->
 
     <div class="container">
@@ -120,17 +119,23 @@
                 <h2 class="text-center">Margarita</h2>
 
                 <p class="text-justify">The famous cocktail of tequila, triple sec, and lime juice. We maintain the
-                    tradition and serve with salt on the rim of the glass.</p>
+                    tradition and serve with salt on the rim of the glass. Our skilled bartenders would love to accommodate your preferences if you would it served shaken or stirred, or on the rocks or frozen.
+					Possibly the most famous Mexican drink internationally, we would love for you to try our special homemade spin on the classic.</p>
 
-                <p class="card-text"><small class="text-muted">275 calories. Carbs 36.1g Fat 0.2g Protein 0.2g</small>
 
                 </p>
 
             </div>
-			
+
 			<div class="col-md-6">
 
-                <img src="Img/drink2.png" class="img-circle img-responsive" alt="Margarita" />
+			<div class="image-container">
+
+            <img src="Img/drink2.png" class="img-circle img-responsive" alt="Margarita" onclick="showText(2)" />
+
+			<div class="image-text" id="text2">275 calories. Carbs 36.1g Fat 0.2g Protein 0.2g</div>
+
+			<script src="js/showText.js"></script>
 
             </div>
 
@@ -139,7 +144,7 @@
 
     </div>
     <!-- END OF MARGARITA -->
-	
+
 	<!-- START OF AUGA FRESCAS  -->
 
     <div class="container">
@@ -148,18 +153,25 @@
 
             <div class="col-md-6">
 
-                <img src="Img/drink3.png" class="img-circle img-responsive" alt="Auga Fresca" />
+  			<div class="image-container">
+
+            <img src="Img/drink3.png" class="img-circle img-responsive" alt="Auga Frescas" onclick="showText(3)" />
+
+			<div class="image-text" id="text3">57 calories. Carbs 15g Fat 0g Protein 0g</div>
+
+			<script src="js/showText.js"></script>
 
             </div>
+
+		</div>
 
             <div class="col-md-6  ">
 
                 <h2 class="text-center">Auga Frescas</h2>
 
                 <p class="text-justify">Available all over Mexico, agua frescas are fruit-flavoured waters. A great
-                    compliment to any meal. We serve strawberry, mango, lime, and pineapple.</p>
-
-                <p class="card-text"><small class="text-muted">57 calories. Carbs 15g Fat 0g Protein 0g</small>
+                    compliment to any meal. We serve strawberry, mango, lime, and pineapple. In the scorching heat, there is no better non-alcoholic refreshing cure than a sweet auga fresca.
+					Depending on your personal taste, we offer a wide variety for all ages to enjoy.</p>
 
                 </p>
 
@@ -169,7 +181,7 @@
 
     </div>
     <!-- END OF AUGA FRESCAS -->
-	
+
 	<!-- START OF MODELO ESPECIAL  -->
 
     <div class="container">
@@ -182,17 +194,22 @@
 
                 <p class="text-justify">Pilsner style Lager that is a classic across Mexican households and restaurants.
                     Identified by its orange blossom honey aroma with a hint of herb. Perfect for hot days as well as
-                    every other type of day!</p>
+                    every other type of day! This beer can be found anywhere from a party at home to a special date night, which we feel perfectly demonstrates how versatile our Mexican cuisine is.</p>
 
-                <p class="card-text"><small class="text-muted">143 calories. Carbs 13.7g Fat 0g Protein 1.1g</small>
 
                 </p>
 
             </div>
-			
+
 			<div class="col-md-6">
 
-                <img src="Img/drink4.png" class="img-circle img-responsive" alt="Modelo Especial" />
+  			<div class="image-container">
+
+            <img src="Img/drink4.png" class="img-circle img-responsive" alt="Modelo Especial" onclick="showText(4)" />
+
+			<div class="image-text" id="text4">143 calories. Carbs 13.7g Fat 0g Protein 1.1g</div>
+
+			<script src="js/showText.js"></script>
 
             </div>
 

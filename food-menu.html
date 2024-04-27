@@ -21,44 +21,42 @@
 <body>
 
     <!-- START OF NAV BAR -->
-    <div class="navbar-static-top navbar-default" id="home">
+    <div class="navbar-static-top navbar-inverse" id="home">
 
         <div class="container">
 
+            <div class="navbar-brand">
+
+                <!-- We use "#" so that the page does not reload when we clink a link -->
+                <!-- <a href="index.html" --> Tequila Tango
+
+            </div>
+
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             
-                <div class="navbar-brand">
+            </button>
 
-                    <!-- We use "#" so that the page does not reload when we clink a link -->
-                    <!-- <a href="#"> --> Sean & Paul's Tequila Tango
+            <div class="collapse navbar-collapse navHeaderCollapse">
+                <!--Collapses menu - mobile view -->
 
-                </div>
+                <ul class="nav navbar-nav navbar-right">
 
-                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="food-menu.html">Food Menu</a></li>
+                    <li><a href="drink-menu.html">Drink Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
 
-                        Menu
 
-                    </button>
+                </ul>
 
-                <div class="collapse navbar-collapse navHeaderCollapse">
-                    <!--Collapses menu - mobile view -->
-
-                    <ul class="nav navbar-nav navbar-right">
-
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="food-menu.html">Food Menu</a></li>
-                        <li><a href="drink-menu.html">Drink Menu</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="about.html">About</a></li>
-                        
-
-                    </ul>
-
-                </div>
-
+            </div>
         </div>
-
-    </div>
     <!-- END OF NAV BAR -->
 
 
@@ -75,7 +73,6 @@
     </div>
     <!-- END OF JUMBO  -->
 
-
     <!-- strat of alt1 -->
     <div class="alt1 padding">
 
@@ -87,8 +84,16 @@
         <div class="row padding">
 
             <div class="col-md-6">
+			
+			<div class="image-container">
 
-                <img src="Img/food1.png" class="img-circle img-responsive" alt="Buritto" />
+            <img src="Img/food1.png" class="img-circle img-responsive" alt="Burrito" onclick="showText(1)" />
+            
+			<div class="image-text" id="text1">721 calories. Carbs 56.5g Fat 33.4g Protein 45g</div>
+            
+			<script src="js/showText.js"></script>
+    
+            </div>
 
             </div>
 
@@ -101,8 +106,6 @@
                     rice, beans, cheese, and salsa. It's often served with guacamole, sour cream, and additional
                     toppings like lettuce and tomatoes. Burritos are known for their portability and
                     versatility, making them a popular choice for meals on the go or casual dining</p>
-
-                <p class="card-text"><small class="text-muted">164 calories. Carbs 8g Fat 0g Protein 1g</small>
 
                 </p>
 
@@ -131,15 +134,21 @@
                     quesadillas include shredded chicken, beef, vegetables, and beans. Quesadillas are often
                     served with salsa, guacamole, and sour cream for dipping or topping.</p>
 
-                <p class="card-text"><small class="text-muted">275 calories. Carbs 36.1g Fat 0.2g Protein 0.2g</small>
-
                 </p>
 
             </div>
 
                 <div class="col-md-6">
+				
+				<div class="image-container">
 
-                        <img src="Img/food2.png" class="img-circle img-responsive" alt="Quesadilla" />
+				<img src="Img/food2.png" class="img-circle img-responsive" alt="Quesadilla" onclick="showText(2)" />
+            
+				<div class="image-text" id="text2">563 calories. Carbs 31.5g Fat 37g Protein 31.6g</div>
+            
+				<script src="js/showText.js"></script>
+    
+            </div>
 
                 </div>
 
@@ -160,9 +169,17 @@
 
             <div class="col-md-6">
 
-                <img src="Img/food3.png" class="img-circle img-responsive" alt="Tacos" />
+			<div class="image-container">
+
+			<img src="Img/food3.png" class="img-circle img-responsive" alt="Tacos" onclick="showText(3)" />
+            
+			<div class="image-text" id="text3">221 calories. Carbs 16.2g Fat 12.6g Protein 10.8g</div>
+            
+			<script src="js/showText.js"></script>
 
             </div>
+			
+			</div>
 
                 <h2 class="text-center">Taco</h2>
 
@@ -175,10 +192,6 @@
                 customizable nature, allowing each person to create their perfect combination of
                 ingredients.
             
-            </p>
-
-            <p class="card-text"><small class="text-muted">57 calories. Carbs 15g Fat 0g Protein 0g</small>
-
             </p>
 
         </div>
@@ -196,12 +209,8 @@
         <div class="row padding">
 
             <div class="col-md-6">
-
-                <img src="Img/food4.png" class="img-circle img-responsive" alt="Nachos" />
-
-            </div>
-
-                <h2 class="text-center">Nachos</h2>
+			
+			<h2 class="text-center">Nachos</h2>
 
                 <p class="text-justify">
                     
@@ -212,8 +221,22 @@
                     sports events, or casual gatherings, and they can be customized to suit individual tastes.
                 </p>
 
-                <p class="card-text"><small class="text-muted">143 calories. Carbs 13.7g Fat 0g Protein 1.1g</small></p>
+                </div>
+				
+				<div class="col-md-6">
+				
+				<div class="image-container">
 
+				<img src="Img/food4.png" class="img-circle img-responsive" alt="Nachos" onclick="showText(4)" />
+            
+				<div class="image-text" id="text4">517 calories. Carbs 36.2g Fat 31.5g Protein 24g</div>
+            
+				<script src="js/showText.js"></script>
+
+            </div>
+
+				</div>
+			
         </div>
 
     </div>
