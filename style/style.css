@@ -55,6 +55,7 @@ text-align:center;
 
 .carousel {
     background-color: #e9cf95;
+}
 
 .carousel-caption p{
   font-family: "Fugaz One", sans-serif;
@@ -74,17 +75,7 @@ text-align:center;
   padding: 10px;
 }
 
-.image-text {
-	display: none;
-    }
-        
-	#toggle-text:checked + .image-text {
-    display: block;
-	}
-	label {
-    cursor: pointer;
-}
-
+<<<<<<< HEAD
 /*.navbar-static-top {
 font-family: "Luckiest Guy", cursive;
 font-weight: 400;
@@ -92,3 +83,23 @@ font-style: normal;
 color: black;
 }
 */
+=======
+/* CSS code for positioning text over images */
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-text {
+  display: none; /* Initially hide text */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Text color */
+  background-color: rgba(0, 0, 0, 0.7); /* Background color with transparency */
+  padding: 20px;
+  width: 80%; /* Adjust the width as needed */
+}
+>>>>>>> 2b78f1559537cb61b0409ad0228aaee58608a6f6
