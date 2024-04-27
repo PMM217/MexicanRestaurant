@@ -4,6 +4,12 @@ background-image: url('../Img/homepageBackground.jpg');
 background-attachment:fixed;
 min-height:500px;
 margin-bottom:0px;
+font-family: "Luckiest Guy", cursive;
+font-weight: 400;
+font-style: normal;
+color: black;
+background-color: rgba(255, 255, 255, 0.6); 
+padding: 10px;
 
 }
 
@@ -68,15 +74,6 @@ text-align:center;
   padding: 10px;
 }
 
-.jumbotron {
-  font-family: "Londrina Outline", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: white !important;
-    background-color: rgba(255, 255, 255, 0.6); 
-  padding: 10px;
-}
-
 .image-text {
 	display: none;
     }
@@ -87,3 +84,11 @@ text-align:center;
 	label {
     cursor: pointer;
 }
+
+/*.navbar-static-top {
+font-family: "Luckiest Guy", cursive;
+font-weight: 400;
+font-style: normal;
+color: black;
+}
+*/
