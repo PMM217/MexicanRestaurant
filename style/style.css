@@ -68,12 +68,14 @@ text-align:center;
   padding: 10px;
 }
 
-/*.jumbotron h1{
+.jumbotron {
   font-family: "Londrina Outline", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: white;
-}*/
+  color: white !important;
+    background-color: rgba(255, 255, 255, 0.6); 
+  padding: 10px;
+}
 
 .image-text {
 	display: none;
