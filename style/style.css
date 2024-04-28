@@ -13,11 +13,6 @@ padding: 10px;
 
 }
 
-/* .img-size{
-    height: 75%;
-    width: 75%;
-} */
-
 .alt1{
 
     background: #e9cf95;
@@ -75,15 +70,6 @@ text-align:center;
   padding: 10px;
 }
 
-<<<<<<< HEAD
-/*.navbar-static-top {
-font-family: "Luckiest Guy", cursive;
-font-weight: 400;
-font-style: normal;
-color: black;
-}
-*/
-=======
 /* CSS code for positioning text over images */
 .image-container {
   position: relative;
@@ -102,4 +88,4 @@ color: black;
   padding: 20px;
   width: 80%; /* Adjust the width as needed */
 }
->>>>>>> 2b78f1559537cb61b0409ad0228aaee58608a6f6
+
